@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+
+    <style>
+      body {
+        background: linear-gradient(to right, rgb(122, 35, 35), red);
+      }
+      form {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        background: darkblue;
+        padding: 20px;
+        border: 2px solid dodgerblue;
+      }
+      legend {
+        border: 2px solid dodgerblue;
+        background: darkblue;
+        padding: 10px 4px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .input {
+        padding: 10px;
+      }
+      .check {
+        display: flex;
+      }
+      .btn {
+        padding: 10px;
+      }
+
+      .btn:hover {
+        background: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>
+          <strong>Entre em Contato</strong>
+        </legend>
+        <label for="sel"><strong>Assunto:</strong></label>
+        <select name="selecione" id="sel" class="input">
+          <option value="1">Suporte</option>
+          <option value="2">Sugestão</option>
+          <option value="3">Reclamação</option>
+        </select>
+
+        <label for="name"><strong>Nome Completo:</strong></label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Seu nome"
+          class="input"
+        />
+
+        <label for="email"><strong>E-mail:</strong></label>
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@gmail.com"
+          class="input"
+        />
+
+        <textarea name="Mensagem" id="msg" cols="30" rows="10"></textarea>
+
+        <div class="check">
+          <input type="checkbox" name="accept" id="accepted" />
+          <label for="accepted">
+            <strong>Aceito receber Novidades no email!</strong>
+          </label>
+        </div>
+
+        <button class="btn">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
